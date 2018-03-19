@@ -3107,7 +3107,7 @@
 		}
 
 		#header.alt {
-			padding: 7em 5em 4em 5em ;
+			padding: 30px 5em 4em 5em ;
 		}
 
 			#header.alt h1 {
@@ -3386,7 +3386,7 @@
 		}
 
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
-			color: #636363;
+			color: #943842;
 		}
 
 		#main blockquote {
