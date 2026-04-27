@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Harutyun Minasyan — Data Visualization Engineer</title>
+
+<meta name="ext-resource-dependency" content="work/01-process-mining.jpg" data-resource-id="shot01" />
+<meta name="ext-resource-dependency" content="work/02-3d-heatmap.png" data-resource-id="shot02" />
+<meta name="ext-resource-dependency" content="work/03-location-analytics.png" data-resource-id="shot03" />
+<meta name="ext-resource-dependency" content="work/04-link-analysis.png" data-resource-id="shot04" />
+<meta name="ext-resource-dependency" content="work/05-trading-chart.png" data-resource-id="shot05" />
+<meta name="ext-resource-dependency" content="work/06-infographic.png" data-resource-id="shot06" />
+<meta name="ext-resource-dependency" content="work/07-news-intel.png" data-resource-id="shot07" />
+<meta name="ext-resource-dependency" content="work/08-link-network.png" data-resource-id="shot08" />
+<meta name="ext-resource-dependency" content="work/09-timeline-activity.webp" data-resource-id="shot09" />
+<meta name="ext-resource-dependency" content="work/10-gantt.webp" data-resource-id="shot10" />
+<meta name="ext-resource-dependency" content="work/11-genome-tracks.webp" data-resource-id="shot11" />
+<meta name="ext-resource-dependency" content="work/12-machine-oee.webp" data-resource-id="shot12" />
+<meta name="ext-resource-dependency" content="work/13-network-graph.png" data-resource-id="shot13" />
+<meta name="ext-resource-dependency" content="work/14-ipdr-profile.png" data-resource-id="shot14" />
+<meta name="ext-resource-dependency" content="work/15-activity-charts.png" data-resource-id="shot15" />
+<meta name="ext-resource-dependency" content="work/16-heatmap-popup.png" data-resource-id="shot16" />
+<meta name="ext-resource-dependency" content="work/17-aurora-heatmap.png" data-resource-id="shot17" />
+<meta name="ext-resource-dependency" content="work/18-co-movement.png" data-resource-id="shot18" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio.css?v=18" />
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<template id="__bundler_thumbnail" data-bg-color="#0c0d10">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0c0d10"/>
+    <g stroke="#f5b942" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- chart bars rising -->
+      <rect x="360" y="500" width="60" height="120" />
+      <rect x="450" y="440" width="60" height="180" />
+      <rect x="540" y="380" width="60" height="240" />
+      <rect x="630" y="300" width="60" height="320" />
+      <rect x="720" y="220" width="60" height="400" />
+      <!-- baseline -->
+      <path d="M340 640 L820 640" />
+      <!-- spark line -->
+      <path d="M340 360 L420 320 L500 340 L580 260 L660 280 L740 200 L820 240" stroke-width="4"/>
+      <!-- corner marks (cinematic crosshair vibe) -->
+      <path d="M180 180 L180 230 M180 180 L230 180" />
+      <path d="M1020 180 L1020 230 M1020 180 L970 180" />
+      <path d="M180 620 L180 570 M180 620 L230 620" />
+      <path d="M1020 620 L1020 570 M1020 620 L970 620" />
+    </g>
+    <text x="600" y="730" font-family="ui-monospace, monospace" font-size="22" letter-spacing="6" fill="#7a7d83" text-anchor="middle">HM · PORTFOLIO</text>
+  </svg>
+</template>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" src="tweaks-panel.jsx?v=18"></script>
+<script type="text/babel" src="portfolio.standalone.jsx?v=18"></script>
+</body>
+</html>
