@@ -32,39 +32,39 @@ const TIMELINE = [
     role: "Software Engineer",
     company: "Datafusion Systems",
     location: "UAE",
-    summary: "Building data analytics systems for law enforcement based on mobile operators' data.",
+    summary: "Designed and shipped large-scale graph and analytics interfaces in Angular for high-volume telecom data. Built complex network and link-analysis visualizations with D3.js and G6.js, tuned for scale via GraphQL APIs.",
     stack: ["Angular", "TypeScript", "D3.js", "G6.js", "GraphQL"],
   },
   {
     start: "Jan 2023", end: "Jul 2024",
-    role: "Freelancer",
-    company: "Upwork",
+    role: "Independent Front-End / Data Viz Engineer",
+    company: "Upwork — Freelance",
     location: "Remote",
-    summary: "Independent contracts across data-viz, dashboards and front-end engineering.",
+    summary: "Delivered front-end and visualization engagements for international clients, turning research prototypes into production-ready, performant visual interfaces.",
     stack: ["D3.js", "React", "TypeScript"],
   },
   {
     start: "May 2022", end: "Dec 2022",
-    role: "Power BI Custom Visuals Developer · Microsoft",
-    company: "Akvelon, Inc.",
+    role: "Power BI Custom Visuals Developer",
+    company: "Akvelon, Inc. — for Microsoft",
     location: "Armenia",
-    summary: "Moved visual backend logic to the front end. Layout calculation with Graphviz on the client. Performance optimization for Power BI custom visuals.",
-    stack: ["JavaScript", "TypeScript", "D3.js", "Power BI"],
+    summary: "Owned end-to-end implementation of Power BI custom visuals for Microsoft in D3.js. Migrated heavy backend logic into the front end, including in-browser layout computation with Graphviz. Diagnosed and resolved performance bottlenecks across rendering and data-binding paths.",
+    stack: ["JavaScript", "TypeScript", "D3.js", "Power BI", "Graphviz"],
   },
   {
     start: "Mar 2022", end: "May 2022",
-    role: "Product Researcher · Data Visualization (part-time)",
+    role: "Data Visualization Engineer · Product Researcher",
     company: "SuperAnnotate",
     location: "Armenia",
-    summary: "Rendered 2M+ elements without performance issues by combining SVG + Canvas in one visual. Product and visualization research.",
-    stack: ["JavaScript", "D3.js"],
+    summary: "Engineered visualizations rendering 2M+ elements with no performance degradation by combining SVG and Canvas. Led visualization research and prototyping to inform product direction.",
+    stack: ["JavaScript", "D3.js", "Canvas"],
   },
   {
     start: "Dec 2021", end: "May 2022",
-    role: "Data Visualization Developer (part-time)",
+    role: "Data Visualization Engineer (D3.js)",
     company: "Biomotivate",
     location: "USA",
-    summary: "Time-series medical data visualization, pulling directly from InfluxDB. Data cleaning / transformation / reduction; moved heavy calc from update-cycle to preprocessing.",
+    summary: "Read time-series directly from InfluxDB on the client — no backend layer — with full data cleaning, transformation and reduction in the browser. Optimized hot paths by relocating heavy calculations from per-frame updates into preprocessing.",
     stack: ["JavaScript", "D3.js", "InfluxDB"],
   },
   {
@@ -85,10 +85,10 @@ const TIMELINE = [
   },
   {
     start: "Jan 2018", end: "Dec 2020",
-    role: "Front-End & Data Visualization Developer (part-time)",
+    role: "Front-End & Data Visualization Developer",
     company: "University of Stuttgart",
     location: "Germany",
-    summary: "Visualization tool for visual analysis of text annotations — a new technique for NLP researchers to gain insight into AI training. Co-author of the paper \u201CAnnoXplorer: A Scalable, Integrated Approach for the Visual Analysis of Text Annotations\u201D.",
+    summary: "Built a D3.js visualization tool for NLP research — a new technique for researchers to gain insight into AI training data. Co-author of the paper \u201CAnnoXplorer: A Scalable, Integrated Approach for the Visual Analysis of Text Annotations\u201D.",
     stack: ["JavaScript", "D3.js"],
   },
   {
@@ -109,12 +109,13 @@ const EDUCATION = [
 ];
 
 const STACK = [
-  { group: "Languages", items: ["JavaScript", "TypeScript", "Python", "Node.js"] },
-  { group: "Frameworks", items: ["React", "Angular"] },
-  { group: "Visualization", items: ["D3.js", "Three.js", "G6.js", "Power BI"] },
-  { group: "AI Workflow", items: ["Claude Code", "GitHub Copilot", "Agent Orchestration", "Prompt Eng."] },
-  { group: "Markup & UI", items: ["HTML5", "CSS3", "Bootstrap", "PrimeNG"] },
-  { group: "Languages (spoken)", items: ["English (Professional)", "Russian (Fluent)", "Armenian (Native)", "German (Intermediate)"] },
+  { group: "Languages", items: ["JavaScript", "TypeScript", "Python"] },
+  { group: "Frameworks", items: ["Angular", "React", "Node.js", "SAPUI5"] },
+  { group: "Visualization", items: ["D3.js", "G6.js", "Three.js", "Canvas", "SVG", "WebGL", "Power BI"] },
+  { group: "Data & APIs", items: ["GraphQL", "InfluxDB"] },
+  { group: "AI Engineering", items: ["Claude Code", "Claude Agents & Subagents", "MCP", "LLM APIs", "Prompt Engineering", "Hugging Face"] },
+  { group: "Markup & UI", items: ["HTML5", "CSS3", "Bootstrap", "PWA"] },
+  { group: "Languages (spoken)", items: ["English (Professional)", "Russian (Intermediate)", "Armenian (Native)", "German (Intermediate)"] },
 ];
 
 const STACK_ICONS = {
@@ -134,7 +135,12 @@ const STACK_ICONS = {
       <path d="M3 20h18" /><path d="M6 20V10" /><path d="M11 20V4" /><path d="M16 20v-7" /><path d="M21 20v-4" />
     </svg>
   ),
-  "AI Workflow": (
+  "Data & APIs": (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <ellipse cx="12" cy="5" rx="8" ry="3" /><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5" /><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" />
+    </svg>
+  ),
+  "AI Engineering": (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
       <path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3" />
       <circle cx="12" cy="12" r="3" />
@@ -238,10 +244,12 @@ function Hero() {
           DATA VISUALIZATION ENGINEER<span className="muted"> &nbsp;·&nbsp; YEREVAN / DUBAI</span>
         </p>
         <p className="hero-bio">
-          Senior Data Visualization Developer with <strong>7+ years</strong> engineering complex,
-          high-performance dashboards. Expert in modern Front-End (TypeScript, React, Angular)
-          and visual libraries (D3.js, Three.js, G6.js). I orchestrate <em>AI-driven workflows</em>
-          with Claude Code and agent pipelines to ship production-grade interfaces faster.
+          Senior Data Visualization Developer with <strong>10+ years</strong> building
+          high-performance dashboards and analytics tools that turn large, complex datasets
+          into clear, actionable insights. Expert in JavaScript / TypeScript, React and Angular
+          with deep D3.js, G6.js, Canvas &amp; WebGL — from rendering 2M+ elements to shipping
+          Power BI custom visuals for Microsoft. I orchestrate <em>AI-driven workflows</em> with
+          Claude Code, agents &amp; MCP to ship production-grade interfaces faster.
         </p>
         <div className="hero-actions">
           <a className="btn primary" href="#timeline">
@@ -255,7 +263,7 @@ function Hero() {
       <div className="hero-readout mono">
         <div className="ro-block">
           <div className="ro-k">YRS_EXP</div>
-          <div className="ro-v">07+</div>
+          <div className="ro-v">10+</div>
         </div>
         <div className="ro-block">
           <div className="ro-k">ROLES</div>
@@ -274,7 +282,7 @@ function Hero() {
       <Marquee items={[
         "D3.JS", "THREE.JS", "G6.JS", "REACT", "ANGULAR", "TYPESCRIPT",
         "POWER BI", "GRAPHQL", "GRAPHVIZ", "INFLUXDB", "WEBGL", "CANVAS",
-        "CLAUDE CODE", "AGENT ORCHESTRATION", "FORCE LAYOUT", "SVG + CANVAS",
+        "CLAUDE CODE", "CLAUDE AGENTS", "MCP", "HUGGING FACE", "FORCE LAYOUT", "SVG + CANVAS",
       ]} />
     </section>
   );
@@ -331,7 +339,7 @@ function Timeline() {
       <Reveal as="header" className="section-head">
         <div className="sh-left">
           <span className="mono small muted">§01 · CAREER TIMELINE</span>
-          <h2>Seven years, three countries, one craft.</h2>
+          <h2>Ten years, three countries, one craft.</h2>
         </div>
         <div className="sh-right mono small muted">
           {TIMELINE.length} ROLES &nbsp;·&nbsp; 2016 — 2026
